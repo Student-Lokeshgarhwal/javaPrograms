@@ -1,20 +1,19 @@
-public class reverseNo {
-
-      public static void main(String[] args) {
+public class reverseNo{
+     public static void main(String[] args) {
 
         int x = -124;
         int n=0;
-        boolean negative = false;
-        if(x < 0){
+        boolean flag = false;
+        if(x<0){
             x = x+(x*-2);
-            negative = true;
+            flag=true;
         }
         while (x>0) {
             n = n*10;
             n += x%10;
             x= x/10;
         }
-        if(negative){
+        if(flag){
             n = n*-1;
         }
         System.out.println(n);
