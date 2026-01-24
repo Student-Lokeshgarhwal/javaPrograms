@@ -15,6 +15,7 @@ public class reverseStrWithoutSpace {
         }
     }
     public static void main(String[] args) {
-        reverseString(new char[]{'a','b','c'});
+        char[] str = {'A','L','G','O','R','I','T','H','M'};
+        reverseString(str);
     }
 }
