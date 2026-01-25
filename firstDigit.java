@@ -9,7 +9,7 @@ public class firstDigit {
         while (number / 10 != 0) {
             number = number / 10;
         }
-        System.out.println("The first digit of integer value is :"+number);
+        System.out.println("The first digit of integer value is : "+number);
         return;
     }
 }
