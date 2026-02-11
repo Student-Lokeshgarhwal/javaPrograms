@@ -1,5 +1,6 @@
 public class stringCompression {
     public static int compress(char[] chars) {
+         if(chars.length== 1) return 1;
         int count = 1;
         int x = 0;
         String str = "";
@@ -18,10 +19,24 @@ public class stringCompression {
                     str = str + chars[i];
                 }
                 count = 1;
+                if(i+1 == chars.length - 1){
+                    str = str + chars[i+1];
+                }
             }
         }
         System.out.println(str);
-        return str.length();
+        for(int i=0;i<chars.length;i++){
+            if( i < str.length()){
+            chars[i] = str.charAt(i);
+            }else{
+                chars[i] = ' ';
+            }
+        }
+        for(int i=0;i<chars.length;i++){
+            if(chars[i] == ' ') break;
+            x +=1;
+        }
+        return x;
     }
 
     public static void main(String[] args) {
