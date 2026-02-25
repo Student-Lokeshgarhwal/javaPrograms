@@ -18,7 +18,7 @@ class treverse {
         if (root == null)
             return;
         Inorder(root.left);
-        System.out.println(root.data);
+        System.out.print(root.data+" ");
         Inorder(root.right);
     }
 
