@@ -15,4 +15,3 @@ public class sortByKey {
         System.out.println(sortedMap);
     }
 }
-```
