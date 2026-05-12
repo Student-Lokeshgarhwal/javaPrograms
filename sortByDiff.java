@@ -28,5 +28,23 @@ public class sortByDiff {
 
         return ans;
     }
-    
+
+    public static void main(String[] args) {
+
+        sortByDiff obj = new sortByDiff();
+
+        int[][] tasks = {
+            {1, 3},
+            {2, 4},
+            {10, 11},
+            {10, 12},
+            {8, 9}
+        };
+
+        int result = obj.minimumEffort(tasks);
+
+        System.out.println(
+            "Minimum Initial Energy = " + result
+        );
+    }
 }
